@@ -10,3 +10,7 @@ test("scales proportional amounts including eggs", () => {
   expect(scaleRecipe(3, 4, 6)).toBe(4.5);
   expect(scaleRecipe(2, 4, 6)).toBe(3);
 });
+
+test("parses a mixed number with a unit", () => {
+  expect(parseIngredient("1 1/2 cups flour")).toEqual({ amount: 1.5, unit: "cup", name: "flour" });
+});
