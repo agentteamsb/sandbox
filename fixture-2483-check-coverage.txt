@@ -1,0 +1,1 @@
+Check coverage rescue fixture for agent-team issue 2483.
